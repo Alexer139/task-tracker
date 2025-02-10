@@ -7,7 +7,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <AppBar position="static" sx={{ display: { xs: 'block', sm: 'flex' }, bgcolor: '#942929' }}>
+      <AppBar position="fixed" sx={{ display: { xs: 'block', sm: 'flex' }, bgcolor: '#942929'}}>
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu" onClick={() => setOpen(true)} sx={{ display: { sm: 'none' } }}>
             <img src="/logo.svg" alt="Menu" style={{ width: 90, height: 40 }} />
