@@ -1,29 +1,27 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Categories from "./pages/Categories";
-import AddTask from "./pages/AddTask";
-import Dashboard from "./pages/Dashboard";
+import Tasks from "./pages/Tasks";
+import Calendar from "./pages/Calendar";
+import KnowledgeBase from "./pages/KnowledgeBase";
 import Settings from "./pages/Settings";
-import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import { CssBaseline, Container } from "@mui/material";
+import { CssBaseline, Container, Box } from "@mui/material";
 
 function App() {
   return (
-    <>
+    <Box sx={{ bgcolor: '#942929', minHeight: '100vh' }}>
       <CssBaseline />
       <Navbar />
       <Container maxWidth="sm">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/categories" element={<Categories />} />
-          <Route path="/add-task" element={<AddTask />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/knowledge-base" element={<KnowledgeBase />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/about" element={<About />} />
         </Routes>
       </Container>
-    </>
+    </Box>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "@mui/material";
 
-function Categories() {
+function Calendar() {
   return <Typography variant="h4">Категории задач</Typography>;
 }
-export default Categories;
+export default Calendar;
