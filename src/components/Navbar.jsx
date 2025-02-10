@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemText, Typography } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
 function Navbar() {

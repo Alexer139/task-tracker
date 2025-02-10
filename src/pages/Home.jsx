@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Box, Button } from "@mui/material";
-import { Block } from "@mui/icons-material";
+import Doska from "../components/Doska";
 
 function Home() {
   return (
@@ -39,26 +39,27 @@ function Home() {
         </Button>
       </Box>
 
+                                      {/* Возможности сайта */}
       <Box sx={{ mt: 6 }}>
-        <Typography sx={{ fontSize: 27, color: 'rgb(255, 255, 255)', WebkitTextStroke: '0.8px black' }}>
+        <Typography variant="h5" gutterBottom>
           Возможности сайта
         </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
-          <Box sx={{ width: 320,
-                     height: 180,
-                     bgcolor: 'rgb(190, 66, 66)',
-                     borderRadius: 2,
-                     p: 2,
-                     textAlign: 'center'
-                  }}>
-            <Typography sx={{ textAlign: 'start', fontSize: 27, color: '#322228' }}>Задачи</Typography>
-            <Typography sx={{ textAlign: 'start', fontSize: 18 }}>
-              твои запланированные задачи и не только (напоминалки)
-            </Typography>
-            <Box sx={{ mt: 2, overflow: 'hidden' }}>
-              <img src="/task-button.png" alt="Кнопка задачи" style={{ width: '100%', objectFit: 'cover' }} />
-            </Box>
-          </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, mt: 2 }}>
+          <Doska 
+            title="Задачи" 
+            description="твои запланированные задачи и не только (напоминалки)" 
+            image="/task-button.png"
+          />
+          <Doska 
+            title="Календарь" 
+            description="твои возможные задачи/мероприятия запланированые на месяц" 
+            image="/calendar-button.png" 
+          />
+          <Doska 
+            title="База знаний" 
+            description="твои блоги и статьи по улучшению продуктивности" 
+            image="/knowledge-button.png" 
+          />
         </Box>
       </Box>
 
