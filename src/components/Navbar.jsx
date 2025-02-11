@@ -30,8 +30,7 @@ function Navbar() {
           height: 'auto',
           maxHeight: '400px',
           borderRadius: '0 0 10px 0',
-          transition: 'all 0.3s ease-in-out'
-              } }}
+        } }}
       >
         <List>
           {[

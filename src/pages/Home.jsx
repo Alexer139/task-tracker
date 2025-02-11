@@ -48,10 +48,10 @@ function Home() {
 
                                       {/* Возможности сайта */}
       <Box sx={{ mt: 6 }}>
-        <Typography variant="h5" gutterBottom>
+        <Typography sx={{fontSize: 28}} gutterBottom>
           Возможности сайта
         </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, mt: 2 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, mt: -2 }}>
           <Doska 
             title="Задачи" 
             description="твои запланированные задачи и не только (напоминалки)" 
