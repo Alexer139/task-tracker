@@ -4,7 +4,10 @@ import Doska from "../components/Doska";
 
 function Home() {
   return (
-    <Box sx={{ p: 3, textAlign: 'center', pt: 12 }}>
+    <Box sx={{ p: 3,
+               textAlign: 'center',
+               pt: 12,
+               fontFamily: 'Montserrat',  }}>
       
       <Typography variant="h3">планируйте в</Typography>
       <Typography variant="h2" sx={{ color: 'rgb(247, 175, 175)' }}>
