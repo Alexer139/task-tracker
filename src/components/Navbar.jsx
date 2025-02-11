@@ -9,7 +9,7 @@ function Navbar() {
       <AppBar position="fixed" sx={{ display: { xs: 'block', sm: 'flex' }, bgcolor: '#942929'}}>
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu" onClick={() => setOpen(true)} sx={{ display: { sm: 'none' } }}>
-            <img src="/logo.svg" alt="Menu" style={{ width: 90, height: 40 }} />
+            <img src="/logo.png" alt="Menu" style={{ width: 60, height: 40, marginLeft: 5 }} />
           </IconButton>
           <Typography variant="h4" sx={{ flexGrow: 1, textAlign: 'center', color: 'black'}}>Task Tracker</Typography>
           <Button color="inherit" component={Link} to="/" sx={{ display: { xs: 'none', sm: 'block' } }}>Главная</Button>

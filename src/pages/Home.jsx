@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Button } from "@mui/material";
+import { Typography, Box, Button, Link } from "@mui/material";
 import Doska from "../components/Doska";
 
 function Home() {
@@ -51,22 +51,34 @@ function Home() {
           <Doska 
             title="Задачи" 
             description="твои запланированные задачи и не только (напоминалки)" 
-            image="/task-button.png"
+            image="/public/task-button.png"
+            height={198}
+            bgcolor={'#BE4242'}
+            colorTitel={'rgba(50, 34, 40, 1)'}
+            colorDesc={'rgb(54, 22, 22)'}
           />
           <Doska 
             title="Календарь" 
             description="твои возможные задачи/мероприятия запланированые на месяц" 
-            image="/calendar-button.png" 
+            image="/public/calendar-button.png"
+            height={280}
+            bgcolor={'rgb(82, 30, 30)'}
+            colorTitel={'rgb(236, 151, 151)'}
+            colorDesc={'rgb(180, 82, 82)'}
           />
           <Doska 
             title="База знаний" 
             description="твои блоги и статьи по улучшению продуктивности" 
-            image="/knowledge-button.png" 
+            image="/public/knowledge-button.png"
+            height={246}
+            bgcolor={'rgb(218, 103, 103)'}
+            colorTitel={'rgba(15, 11, 12, 0.76)'}
+            colorDesc={'rgb(56, 37, 44)'}
           />
         </Box>
       </Box>
 
-      
+
     </Box>
   );
 }

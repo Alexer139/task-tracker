@@ -5,6 +5,7 @@ import Calendar from "./pages/Calendar";
 import KnowledgeBase from "./pages/KnowledgeBase";
 import Settings from "./pages/Settings";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { CssBaseline, Container, Box } from "@mui/material";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </Container>
+      <Footer />
     </Box>
   );
 }
