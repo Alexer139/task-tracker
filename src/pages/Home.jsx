@@ -1,13 +1,17 @@
 import React from "react";
 import { Typography, Box, Button, Link } from "@mui/material";
 import Doska from "../components/Doska";
+import taskButton from "../assets/task-button.png";
+import calendarButton from "../assets/calendar-button.png";
+import knowledgeButton from "../assets/knowledge-button.png";
 
 function Home() {
   return (
     <Box sx={{ p: 3,
                textAlign: 'center',
                pt: 12,
-               fontFamily: 'Montserrat',  }}>
+               fontFamily: 'Montserrat',
+            }}>
       
       <Typography variant="h3">планируйте в</Typography>
       <Typography variant="h2" sx={{ color: 'rgb(247, 175, 175)' }}>
@@ -51,7 +55,7 @@ function Home() {
           <Doska 
             title="Задачи" 
             description="твои запланированные задачи и не только (напоминалки)" 
-            image="/public/task-button.png"
+            image={taskButton}
             height={198}
             bgcolor={'#BE4242'}
             colorTitel={'rgba(50, 34, 40, 1)'}
@@ -60,7 +64,7 @@ function Home() {
           <Doska 
             title="Календарь" 
             description="твои возможные задачи/мероприятия запланированые на месяц" 
-            image="/public/calendar-button.png"
+            image={calendarButton}
             height={280}
             bgcolor={'rgb(82, 30, 30)'}
             colorTitel={'rgb(236, 151, 151)'}
@@ -69,7 +73,7 @@ function Home() {
           <Doska 
             title="База знаний" 
             description="твои блоги и статьи по улучшению продуктивности" 
-            image="/public/knowledge-button.png"
+            image={knowledgeButton}
             height={246}
             bgcolor={'rgb(218, 103, 103)'}
             colorTitel={'rgba(15, 11, 12, 0.76)'}
