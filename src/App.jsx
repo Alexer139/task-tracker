@@ -6,11 +6,20 @@ import KnowledgeBase from "./pages/KnowledgeBase";
 import Settings from "./pages/Settings";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import {createTheme, ThemeProvider} from "@mui/material/styles"
 import { CssBaseline, Container, Box } from "@mui/material";
+
+const allTheme = createTheme({
+  typography: {
+    fontFamily: "'Bitter', serif",
+  },
+});
+
 
 function App() {
   return (
     <Box sx={{ bgcolor: '#942929', minHeight: '100vh' }}>
+      <ThemeProvider theme={allTheme}>
       <CssBaseline />
       <Navbar />
       <Container maxWidth="sm">
@@ -23,6 +32,7 @@ function App() {
         </Routes>
       </Container>
       <Footer />
+      </ThemeProvider>
     </Box>
   );
 }

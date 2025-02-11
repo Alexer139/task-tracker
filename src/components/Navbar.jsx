@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemTe
 import { useState } from "react";
 
 
+
 function Navbar() {
   const [open, setOpen] = useState(false);
   return (
@@ -12,7 +13,7 @@ function Navbar() {
           <IconButton edge="start" color="inherit" aria-label="menu" onClick={() => setOpen(true)} sx={{ display: { sm: 'none' } }}>
             <img src="/logo.png" alt="Menu" style={{ width: 60, height: 40, marginLeft: 5 }} />
           </IconButton>
-          <Typography variant="h4" sx={{ flexGrow: 1, textAlign: 'center', color: 'black'}}>Task Tracker</Typography>
+          <Typography sx={{ flexGrow: 1, fontSize: 37, textAlign: 'center', color: 'black', fontFamily: "'Love Ya Like A Sister', serif"}}>Task Tracker</Typography>
           <Button color="inherit" component={Link} to="/" sx={{ display: { xs: 'none', sm: 'block' } }}>Главная</Button>
           <Button color="inherit" component={Link} to="/tasks" sx={{ display: { xs: 'none', sm: 'block' } }}>Задачи</Button>
           <Button color="inherit" component={Link} to="/calendar" sx={{ display: { xs: 'none', sm: 'block' } }}>Календарь</Button>

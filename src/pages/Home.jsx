@@ -5,22 +5,24 @@ import taskButton from "../assets/task-button.png";
 import calendarButton from "../assets/calendar-button.png";
 import knowledgeButton from "../assets/knowledge-button.png";
 
+
 function Home() {
   return (
     <Box sx={{ p: 3,
                textAlign: 'center',
                pt: 12,
-               fontFamily: 'Montserrat',
+               fontFamily: 'Montserrat Alternates',
             }}>
       
-      <Typography variant="h3">планируйте в</Typography>
-      <Typography variant="h2" sx={{ color: 'rgb(247, 175, 175)' }}>
+      <Typography variant="h3" sx={{fontWeight: 500}}>планируйте в</Typography>
+      <Typography variant="h2" sx={{ color: 'rgb(247, 175, 175)', fontWeight: 700  }}>
         удобной
       </Typography>
-      <Typography variant="h2">обстановке</Typography>
+      <Typography variant="h2" sx={{fontWeight: 400}}>обстановке</Typography>
 
       <Typography component="div" variant="h5" sx={{
-        mt: 2
+        mt: 2,
+        fontWeight: 500
       }}>
         здесь вы найдете удобный инструмент для управления задачами и проектами
       </Typography>
