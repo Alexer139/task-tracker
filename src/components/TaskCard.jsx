@@ -17,7 +17,7 @@ const TaskCard = ({ title, description, onClick }) => {
       }} 
       onClick={onClick}
     >
-      <Typography variant="h4">{title}</Typography>
+      <Typography variant="h4" sx={{ }}>{title}</Typography>
       <Typography variant="h6" sx={{ display: "-webkit-box", mt: 1, overflow: "hidden", textOverflow: "ellipsis", WebkitBoxOrient: 'vertical', WebkitLineClamp: 2 }}>
         {description}
       </Typography>

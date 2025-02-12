@@ -41,14 +41,36 @@ const Tasks = () => {
 
       {/* Модальное окно */}
       <Modal open={open} onClose={handleClose}>
-        <Box sx={{ width: 330, p: 3, bgcolor: "white", mx: "auto", mt: "13.5vh", borderRadius: 3 }}>
+        <Box sx={{
+            width: 330,
+            p: 3,
+            bgcolor: "rgb(197, 65, 65)",
+            mx: "auto",
+            mt: "13.5vh",
+            borderRadius: 3,
+
+          }}>
           <TextField 
             fullWidth 
             label="Название" 
             value={selectedTask?.title || ""} 
-            onChange={(e) => setSelectedTask({ ...selectedTask, title: e.target.value })} 
+            onChange={(e) => {
+              if (e.target.value.length <= 16) {
+                setSelectedTask({ ...selectedTask, title: e.target.value });
+              }
+            }}
             variant="outlined" 
-            sx={{ mb: 2 }} 
+            sx={{
+              mb: 2,
+              '& label.Mui-focused': {
+                color: 'rgb(65, 26, 26)'
+              },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused fieldset": {
+                  borderColor: "rgb(65, 26, 26)",
+                }
+              } 
+            }} 
           />
           <TextField 
             fullWidth 
@@ -57,10 +79,32 @@ const Tasks = () => {
             onChange={(e) => setSelectedTask({ ...selectedTask, description: e.target.value })} 
             variant="outlined" 
             multiline 
-            rows={4} 
+            rows={21.5}
+            sx={{
+              mb: 2,
+              '& label.Mui-focused': {
+                color: 'rgb(65, 26, 26)'
+              },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused fieldset": {
+                  borderColor: "rgb(65, 26, 26)",
+                }
+              }
+            }} 
           />
-          <Button onClick={handleSave} variant="contained" sx={{ mt: 2, mr: 1 }}>Сохранить</Button>
-          <Button onClick={handleClose} variant="outlined" sx={{ mt: 2 }}>Отмена</Button>
+          <Button onClick={handleSave} variant="contained" sx={{
+            mt: 2,
+            mr: 1,
+            bgcolor: 'rgb(194, 69, 69)',
+            color: 'rgb(44, 13, 13)',
+            fontSize: 18
+          }}>Сохранить</Button>
+          <Button onClick={handleClose} variant="outlined" sx={{
+            mt: 2,
+            border: '2px solid black',
+            color: 'rgb(44, 13, 13)',
+            fontSize: 18
+          }}>Отмена</Button>
         </Box>
       </Modal>
     </Box>
