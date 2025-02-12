@@ -77,7 +77,7 @@ function Home() {
             description="твои блоги и статьи по улучшению продуктивности" 
             image={knowledgeButton}
             height={246}
-            bgcolor={'rgb(218, 103, 103)'}
+            bgcolor={'rgb(207, 80, 80)'}
             colorTitel={'rgba(15, 11, 12, 0.76)'}
             colorDesc={'rgb(56, 37, 44)'}
           />
