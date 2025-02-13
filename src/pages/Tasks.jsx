@@ -39,14 +39,14 @@ const Tasks = () => {
         ))}
       </Box>
 
-      {/* Модальное окно */}
+                          {/* Модальное окно */}
       <Modal open={open} onClose={handleClose}>
         <Box sx={{
             width: 330,
             p: 3,
             bgcolor: "rgb(197, 65, 65)",
             mx: "auto",
-            mt: "13.5vh",
+            mt: "8vh",
             borderRadius: 3,
 
           }}>
@@ -79,7 +79,7 @@ const Tasks = () => {
             onChange={(e) => setSelectedTask({ ...selectedTask, description: e.target.value })} 
             variant="outlined" 
             multiline 
-            rows={21.5}
+            rows={8}
             sx={{
               mb: 2,
               '& label.Mui-focused': {

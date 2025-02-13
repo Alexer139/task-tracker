@@ -91,7 +91,7 @@ const Calendar = () => {
             p: 3,
             bgcolor: "rgb(197, 65, 65)",
             mx: "auto",
-            mt: "20vh",
+            mt: "8vh",
             borderRadius: 2,
             transform: open ? "scale(1)" : "scale(0.9)",
             transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",
@@ -102,7 +102,7 @@ const Calendar = () => {
           <TextField
             fullWidth
             multiline
-            rows={10}
+            rows={6}
             variant="outlined"
             value={notes[`${currentYear}-${currentMonth}-${selectedDate}`] || ""}
             onChange={handleSaveNote}
