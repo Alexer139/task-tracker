@@ -7,12 +7,12 @@ const TaskCard = ({ title, description, onClick }) => {
       sx={{ 
         width: 350, 
         height: 150, 
-        bgcolor: 'rgba(174, 59, 59, 1)', 
+        bgcolor: 'rgb(202, 57, 57)', 
         p: 2, 
         borderRadius: 2,
         boxShadow: '3px 10px 20px rgba(0, 0, 0, 0.3)',
         transition: '0.3s',
-        '&:hover': { bgcolor: 'rgb(104, 27, 27)' },
+        '&:hover': { bgcolor: 'rgb(202, 57, 57)' },
         cursor: "pointer" 
       }} 
       onClick={onClick}

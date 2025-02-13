@@ -4,11 +4,11 @@ import TaskCard from "../components/TaskCard";
 
 const Tasks = () => {
   const [tasks, setTasks] = useState([
-    { id: 1, title: "Task one", description: "description" },
-    { id: 2, title: "Task two", description: "description" },
-    { id: 3, title: "Task three", description: "description" },
-    { id: 4, title: "Task four", description: "description" },
-    { id: 5, title: "Task five", description: "description" },
+    { id: 1, title: "Task one", description: "напиши хоть одну задачу" },
+    { id: 2, title: "Task two", description: "вторую то желанию" },
+    { id: 3, title: "Task three", description: "третью по просто так" },
+    { id: 4, title: "Task four", description: "четвертую если бизнесмен" },
+    { id: 5, title: "Task five", description: "лучше отдохни" },
   ]);
 
   const [open, setOpen] = useState(false);

@@ -38,7 +38,7 @@ function Home() {
             height: 100,
             borderRadius: 3,
             boxShadow: '6px 13px 6px rgba(0, 0, 0, 0.3)',
-            bgcolor: 'rgba(174, 59, 59, 1)',
+            bgcolor: 'rgb(202, 57, 57)',
             color: 'black',
             fontSize: 25,
             '&:hover': { bgcolor: 'rgb(104, 27, 27)' }
@@ -59,7 +59,7 @@ function Home() {
             description="твои запланированные задачи и не только (напоминалки)" 
             image={taskButton}
             height={198}
-            bgcolor={'#BE4242'}
+            bgcolor={'rgb(216, 69, 69)'}
             colorTitel={'rgba(50, 34, 40, 1)'}
             colorDesc={'rgb(54, 22, 22)'}
           />
