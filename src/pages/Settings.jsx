@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Box, Typography, TextField, Button, MenuItem, Select } from "@mui/material";
 
+
+
 const themes = {
-  black: { background: "#000", color: "#fff" },
-  white: { background: "#fff", color: "#000" },
-  purple: { background: "#6a0dad", color: "#fff" },
-  red: { background: "#d32f2f", color: "#fff" },
+  black: { background: "#000", color: "#000" },
+  white: { background: "#fff", color: "#fff" },
+  purple: { background: "#6a0dad", color: "#6e2092" },
+  red: { background: "#d32f2f", color: "red" },
 };
 
 const Settings = () => {
@@ -16,10 +18,10 @@ const Settings = () => {
     setProfile({ ...profile, [e.target.name]: e.target.value });
   };
 
-  const handleThemeChange = (e) => {
-    setTheme(e.target.value);
-    document.body.style.background = themes[e.target.value].background;
-    document.body.style.color = themes[e.target.value].color;
+  const handleThemeChange = (themeKey) => {
+    setTheme(themeKey);
+    document.body.style.background = themes[themeKey].background;
+    document.body.style.color = themes[themeKey].color;
   };
 
   return (
@@ -35,7 +37,16 @@ const Settings = () => {
           name="name"
           value={profile.name}
           onChange={handleChange}
-          sx={{ mb: 2 }}
+          sx={{ mb: 2, mt: 1,
+            '& label.Mui-focused': {
+                color: 'rgb(65, 26, 26)'
+              },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused fieldset": {
+                  borderColor: "rgb(65, 26, 26)",
+                }
+              } 
+           }}
         />
         <TextField
           fullWidth
@@ -44,7 +55,16 @@ const Settings = () => {
           name="email"
           value={profile.email}
           onChange={handleChange}
-          sx={{ mb: 2 }}
+          sx={{ mb: 2,
+            '& label.Mui-focused': {
+                color: 'rgb(65, 26, 26)'
+              },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused fieldset": {
+                  borderColor: "rgb(65, 26, 26)",
+                }
+              } 
+          }}
         />
         <TextField
           fullWidth
@@ -54,17 +74,40 @@ const Settings = () => {
           name="password"
           value={profile.password}
           onChange={handleChange}
-          sx={{ mb: 2 }}
+          sx={{ mb: 2,
+                '& label.Mui-focused': {
+                color: 'rgb(65, 26, 26)'
+              },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused fieldset": {
+                  borderColor: "rgb(65, 26, 26)",
+                }
+              } 
+           }}
         />
-        <Button variant="contained">Сохранить</Button>
+        <Button className="app_button" variant="contained" sx={{ 
+          bgcolor: 'rgb(194, 69, 69)',
+          color: 'rgb(44, 13, 13)',
+          fontSize: 15
+        }}>Сохранить</Button>
       </Box>
       <Typography variant="h6" sx={{ mt: 3, mb: 2 }}>Выбор цветовой схемы</Typography>
-      <Select value={theme} onChange={handleThemeChange}>
-        <MenuItem value="black">Черный</MenuItem>
-        <MenuItem value="white">Белый</MenuItem>
-        <MenuItem value="purple">Фиолетовый</MenuItem>
-        <MenuItem value="red">Красный (по умолчанию)</MenuItem>
-      </Select>
+      <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
+        {Object.keys(themes).map((key) => (
+          <Box
+            key={key}
+            onClick={() => handleThemeChange(key)}
+            sx={{
+              width: 60,
+              height: 60,
+              borderRadius: 2,
+              background: themes[key].background,
+              cursor: "pointer",
+              mb: 30
+            }}
+          />
+        ))}
+      </Box>
     </Box>
   );
 };

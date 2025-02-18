@@ -1,3 +1,4 @@
-.hello {
-    font-family: 'Montserrat', serif;
+.app_button {
+    color: var(--button-text-color);
+    background-color: var(--button-background-color)
 }

@@ -7,6 +7,7 @@ import knowledgeButton from "../assets/knowledge-button.png";
 
 
 function Home() {
+
   return (
     <Box sx={{ p: 3,
                textAlign: 'center',
@@ -31,7 +32,8 @@ function Home() {
         <Typography variant="h4" gutterBottom>
           Попробовать
         </Typography>
-        <Button 
+        <Button
+          className="app_button"
           variant="contained" 
           sx={{
             width: 290,

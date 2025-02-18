@@ -17,8 +17,13 @@ const allTheme = createTheme({
 
 
 function App() {
+
   return (
-    <Box sx={{ bgcolor: '#942929', minHeight: '100vh' }}>
+    <Box sx={{
+      bgcolor: '#942929',
+      minHeight: '100vh'
+      
+    }}>
       <ThemeProvider theme={allTheme}>
       <CssBaseline />
       <Navbar />

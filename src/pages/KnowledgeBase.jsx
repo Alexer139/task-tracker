@@ -1,25 +1,28 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import BlogCard from "../components/BlogCard"; 
+import BlogCard from "../components/BlogCard";
+import Todoist from "../assets/todoist.png";
+import Zen from "../assets/Zen.png";
+import Nir from "../assets/Nir.png";
 
 const KnowledgeBase = () => {
   const articles = [
     {
       title: "Todoits blog",
       description: "Много статей о продуктивности, тайм-менеджменте и полезных привычках.",
-      image: "src/assets/todoist.png",
+      image: Todoist,
       link: "https://blog.doist.com/category/productivity/"
     },
     {
       title: "Zen Habits",
       description: "Блог о минимализме, привычках и продуктивности. Простые методы для улучшения жизни.",
-      image: "/src/assets/Zen.png",
+      image: Zen,
       link: "https://zenhabits.net/"
     },
     {
       title: "Nir Eyal's blog",
       description: "Как справляться с отвлечением и сосредоточиться на важном",
-      image: "/src/assets/Nir.png",
+      image: Nir,
       link: "https://www.nirandfar.com/"
     }
   ];
