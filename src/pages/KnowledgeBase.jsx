@@ -14,19 +14,13 @@ const KnowledgeBase = () => {
       title: "Zen Habits",
       description: "Блог о минимализме, привычках и продуктивности. Простые методы для улучшения жизни.",
       image: "/src/assets/Zen.png",
-      link: "https://example.com/time-management"
+      link: "https://zenhabits.net/"
     },
     {
-      title: "Как избежать выгорания",
-      description: "Советы по поддержанию баланса между работой и отдыхом.",
-      image: "/src/assets/Zen.png",
-      link: "https://example.com/burnout"
-    },
-    {
-      title: "Как избежать выгорания",
-      description: "Советы по поддержанию баланса между работой и отдыхом.",
-      image: "/src/assets/",
-      link: "https://example.com/burnout"
+      title: "Nir Eyal's blog",
+      description: "Как справляться с отвлечением и сосредоточиться на важном",
+      image: "/src/assets/Nir.png",
+      link: "https://www.nirandfar.com/"
     }
   ];
 

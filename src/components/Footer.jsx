@@ -13,7 +13,7 @@ function Footer() {
             pt: 2.3,
             display: 'flex',
             justifyContent: 'center',
-            boxShadow: 'inset 0px 10px 14px rgba(0, 0, 0, 0.31)' 
+            boxShadow: 'inset 0px 10px 14px rgba(0, 0, 0, 0.31)',
         }}
       >
         <GitHubIcon sx={{ fontSize: 31, color: 'rgb(214, 162, 162)' }} />
