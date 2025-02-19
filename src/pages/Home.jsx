@@ -78,7 +78,7 @@ function Home() {
             title="База знаний" 
             description="твои блоги и статьи по улучшению продуктивности" 
             image={knowledgeButton}
-            height={246}
+            height={286}
             bgcolor={'rgb(207, 80, 80)'}
             colorTitel={'rgba(15, 11, 12, 0.76)'}
             colorDesc={'rgb(56, 37, 44)'}
