@@ -19,6 +19,7 @@ function Navbar() {
           <Button color="inherit" component={Link} to="/calendar" sx={{ display: { xs: 'none', sm: 'block' } }}>Календарь</Button>
           <Button color="inherit" component={Link} to="/knowledge-base" sx={{ display: { xs: 'none', sm: 'block' } }}>База знаний</Button>
           <Button color="inherit" component={Link} to="/settings" sx={{ display: { xs: 'none', sm: 'block' } }}>Настройки</Button>
+          <Button color="inherit" component={Link} to="/statistics" sx={{ display: { xs: 'none', sm: 'block' } }}>Статистика</Button>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -39,7 +40,8 @@ function Navbar() {
             { text: "Задачи", path: "/tasks" },
             { text: "Календарь", path: "/calendar" },
             { text: "База знаний", path: "/knowledge-base" },
-            { text: "Настройки", path: "/settings" }
+            { text: "Настройки", path: "/settings" },
+            { text: "Статистика", path: "/statistics" }
           ].map(({ text, path }) => (
               <ListItem key={text} component={Link} to={path} onClick={() => setOpen(false)} sx={{ color: 'black', textDecoration: 'none' }}>
               <ListItemText primary={<Typography variant="h5">{text}</Typography>} />

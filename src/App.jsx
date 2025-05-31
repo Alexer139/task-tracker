@@ -4,6 +4,7 @@ import Tasks from "./pages/Tasks";
 import Calendar from "./pages/Calendar";
 import KnowledgeBase from "./pages/KnowledgeBase";
 import Settings from "./pages/Settings";
+import Statistics from "./pages/Statistics";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import {createTheme, ThemeProvider} from "@mui/material/styles"
@@ -34,6 +35,7 @@ function App() {
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/knowledge-base" element={<KnowledgeBase />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/statistics" element={<Statistics />} />
         </Routes>
       </Container>
       <Footer />
