@@ -9,7 +9,11 @@ export default defineConfig({
     port: process.env.PORT || 3000, // Берём порт из Render
   },
   preview: {
-    host: '0.0.0.0', // То же самое для `vite preview`
+    host: '0.0.0.0', // Важно для Render!
     port: process.env.PORT || 3000,
+    allowedHosts: [ // 👇 Разрешаем хост Render
+      'task-tracker-web-erdc.onrender.com',
+      'localhost', // Для локального теста
+    ],
   },
 })
