@@ -39,8 +39,7 @@ function Navbar() {
             { text: "Задачи", path: "/tasks" },
             { text: "Календарь", path: "/calendar" },
             { text: "База знаний", path: "/knowledge-base" },
-            { text: "Настройки", path: "/settings" },
-            { text: "Статистика", path: "/statistics" }
+            { text: "Настройки", path: "/settings" }
           ].map(({ text, path }) => (
               <ListItem key={text} component={Link} to={path} onClick={() => setOpen(false)} sx={{ color: 'black', textDecoration: 'none' }}>
               <ListItemText primary={<Typography variant="h5">{text}</Typography>} />
